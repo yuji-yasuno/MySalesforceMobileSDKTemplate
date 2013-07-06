@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>YUJIYASUNO-PC</Machine>
+    <WindowsUser>Yuji Yasuno</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>82F40C307119C496BA1C28500245948CEBDA9B7FFE96682F9F74E251760713C7</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>ac7aee46-34de-49c5-9580-fe6f78686f7d_1.0.0.0_neutral__6s7p1f3b6g2bg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>ac7aee46-34de-49c5-9580-fe6f78686f7d_6s7p1f3b6g2bg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>ac7aee46-34de-49c5-9580-fe6f78686f7d</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Yuji Yasuno</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2013-07-06T14:47:34.132</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\MySalesforceMobileSDKTemplate.exe">
+      <PackagePath>MySalesforceMobileSDKTemplate.exe</PackagePath>
+      <Modified>2013-07-06T15:56:15.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\MySalesforceMobileSDKTemplate.pdb">
+      <PackagePath>MySalesforceMobileSDKTemplate.pdb</PackagePath>
+      <Modified>2013-07-06T15:56:15.530</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\Library\MySalesforceMobileSDK.dll">
+      <PackagePath>MySalesforceMobileSDK.dll</PackagePath>
+      <Modified>2013-07-06T12:04:42.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-26T16:11:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-26T16:11:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-26T16:11:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-06-26T16:11:02.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\Library\MySalesforceMobileSDK.dll">
+      <PackagePath>Library\MySalesforceMobileSDK.dll</PackagePath>
+      <Modified>2013-07-06T12:04:42.126</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2013-07-06T12:04:04.988</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-07-26T11:23:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2013-07-06T12:22:10.519</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\StartPage.xaml">
+      <PackagePath>StartPage.xaml</PackagePath>
+      <Modified>2013-07-06T14:44:46.139</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Yuji Yasuno\SkyDrive\salesforce\Demo Componet\MySalesforceMobileSDKTemplate\MySalesforceMobileSDKTemplate\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2013-07-06T14:47:33.903</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
