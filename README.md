@@ -6,6 +6,7 @@ MySalesforceMobileSDKTemplate
 2. Double click the "MySalesforceMobileSDKTemplate.vsi" file and then automatically start the installation into the Visual Studio 2012. (You cannot use the previous versions of Visual Studio because it needs to use WinRT environment)
 
 After installation, you can create new projects using "MySalesforceMobileSDKTemplate".
+And you can set the salesforce.com application information by Resource.resw, please edit using the Visual Studio.
 
 - Introduction -
 Using this template, you only have to do care the logic after OAuth autholization.
