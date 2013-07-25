@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Popups;
 
-namespace MySalesforceMobileSDKTemplate
+namespace $safeprojectname$
 {
     class DebugHelper
     {

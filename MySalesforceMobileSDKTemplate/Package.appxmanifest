@@ -1,39 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-
-  <Identity Name="ac7aee46-34de-49c5-9580-fe6f78686f7d"
-            Publisher="CN=Yuji Yasuno"
-            Version="1.0.0.0" />
-
+  <Identity Name="ac7aee46-34de-49c5-9580-fe6f78686f7d" Publisher="CN=Yuji Yasuno" Version="1.0.0.0" />
   <Properties>
     <DisplayName>MySalesforceMobileSDKTemplate</DisplayName>
     <PublisherDisplayName>Yuji Yasuno</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
     <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
-
   <Resources>
-    <Resource Language="x-generate"/>
+    <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application Id="App"
-        Executable="$targetnametoken$.exe"
-        EntryPoint="MySalesforceMobileSDKTemplate.App">
-        <VisualElements
-            DisplayName="MySalesforceMobileSDKTemplate"
-            Logo="Assets\Logo.png"
-            SmallLogo="Assets\SmallLogo.png"
-            Description="MySalesforceMobileSDKTemplate"
-            ForegroundText="light"
-            BackgroundColor="#464646">
-            <DefaultTile ShowName="allLogos" />
-            <SplashScreen Image="Assets\SplashScreen.png" />
-        </VisualElements>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="MySalesforceMobileSDKTemplate.App">
+      <VisualElements DisplayName="MySalesforceMobileSDKTemplate" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="MySalesforceMobileSDKTemplate" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileOpenPicker">
+          <FileOpenPicker>
+            <SupportedFileTypes>
+              <SupportsAnyFileType />
+            </SupportedFileTypes>
+          </FileOpenPicker>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

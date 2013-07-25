@@ -16,7 +16,7 @@ using Windows.Storage;
 using System.Runtime.Serialization;
 using MySalesforceMobileSDK;
 
-namespace MySalesforceMobileSDKTemplate
+namespace $safeprojectname$
 {
     public sealed partial class StartPage : Page
     {
@@ -53,32 +53,32 @@ namespace MySalesforceMobileSDKTemplate
                 if (share.storedData.accessToken.Length == 0 || share.storedData.refreshToken.Length == 0 || share.storedData.instanceUrl.Length == 0) isNeedOAuthenticate = true;
             }
             
-            MySFRestAPI api = MySFRestAPI.getInstance();
-            api.apiVersion = apiVersion;
-            if (api.coordinator == null) {
-                api.coordinator = new MySFOAuthCoordinator(clientId, redirectUrl, scope);
+            MySFRestAPI api = new MySFRestAPI();
+            MySFRestAPI.apiVersion = apiVersion;
+            if (MySFRestAPI.coordinator == null) {
+                MySFRestAPI.coordinator = new MySFOAuthCoordinator(clientId, redirectUrl, scope);
             }
-            api.coordinator.onCompletedAuthorization += coordinator_onCompletedAuthorization;
-            api.coordinator.onFailedAuthorization += coordinator_onFailedAuthorization;
-            api.coordinator.onCanceledAuthorization += coordinator_onCanceledAuthorization;
-            api.coordinator.onCompletedRefresh += coordinator_onCompletedRefresh;
-            api.coordinator.onFailedRefresh += coordinator_onFailedRefresh;
-            api.coordinator.onRequestFailedRefresh += coordinator_onRequestFailedRefresh;
-            api.coordinator.onCompletedRevokeToken += coordinator_onCompletedRevokeToken;
-            api.coordinator.onRequestFailedRevokeToken += coordinator_onRequestFailedRevokeToken;
-            api.coordinator.onFailedRevokeToken += coordinator_onFailedRevokeToken;
+            MySFRestAPI.coordinator.onCompletedAuthorization += coordinator_onCompletedAuthorization;
+            MySFRestAPI.coordinator.onFailedAuthorization += coordinator_onFailedAuthorization;
+            MySFRestAPI.coordinator.onCanceledAuthorization += coordinator_onCanceledAuthorization;
+            MySFRestAPI.coordinator.onCompletedRefresh += coordinator_onCompletedRefresh;
+            MySFRestAPI.coordinator.onFailedRefresh += coordinator_onFailedRefresh;
+            MySFRestAPI.coordinator.onRequestFailedRefresh += coordinator_onRequestFailedRefresh;
+            MySFRestAPI.coordinator.onCompletedRevokeToken += coordinator_onCompletedRevokeToken;
+            MySFRestAPI.coordinator.onRequestFailedRevokeToken += coordinator_onRequestFailedRevokeToken;
+            MySFRestAPI.coordinator.onFailedRevokeToken += coordinator_onFailedRevokeToken;
 
             if (!isNeedOAuthenticate)
             {
-                api.coordinator.credentials.accessToken = share.storedData.accessToken;
-                api.coordinator.credentials.refreshToken = share.storedData.refreshToken;
-                api.coordinator.credentials.instanceUrl = new Uri(share.storedData.instanceUrl);
-                api.coordinator.credentials.domain = api.coordinator.credentials.instanceUrl.Authority;
-                api.coordinator.refresh();
+                MySFRestAPI.coordinator.credentials.accessToken = share.storedData.accessToken;
+                MySFRestAPI.coordinator.credentials.refreshToken = share.storedData.refreshToken;
+                MySFRestAPI.coordinator.credentials.instanceUrl = new Uri(share.storedData.instanceUrl);
+                MySFRestAPI.coordinator.credentials.domain = MySFRestAPI.coordinator.credentials.instanceUrl.Authority;
+                MySFRestAPI.coordinator.refresh();
             }
             else 
             {
-                api.coordinator.authenticate();
+                MySFRestAPI.coordinator.authenticate();
             }
         }
 
@@ -123,17 +123,6 @@ namespace MySalesforceMobileSDKTemplate
 
         private async void prepareBeforeMove() 
         {
-            MySFRestAPI api = MySFRestAPI.getInstance();
-            api.coordinator.onCompletedAuthorization -= coordinator_onCompletedAuthorization;
-            api.coordinator.onFailedAuthorization -= coordinator_onFailedAuthorization;
-            api.coordinator.onCanceledAuthorization -= coordinator_onCanceledAuthorization;
-            api.coordinator.onCompletedRefresh -= coordinator_onCompletedRefresh;
-            api.coordinator.onFailedRefresh -= coordinator_onFailedRefresh;
-            api.coordinator.onRequestFailedRefresh -= coordinator_onRequestFailedRefresh;
-            api.coordinator.onCompletedRevokeToken -= coordinator_onCompletedRevokeToken;
-            api.coordinator.onRequestFailedRevokeToken -= coordinator_onRequestFailedRevokeToken;
-            api.coordinator.onFailedRevokeToken -= coordinator_onFailedRevokeToken;
-
             ResourceLoader loader = new ResourceLoader();
             String oauthTokenFile = loader.GetString("oauth_data_filename");
 
@@ -156,9 +145,9 @@ namespace MySalesforceMobileSDKTemplate
             var serializer = new DataContractSerializer(typeof(MySFOAuthStoredData));
             MySFSharedData share = MySFSharedData.getInstance();
             if (share.storedData == null) share.storedData = new MySFOAuthStoredData();
-            share.storedData.accessToken = api.coordinator.credentials.accessToken;
-            share.storedData.refreshToken = api.coordinator.credentials.refreshToken;
-            share.storedData.instanceUrl = api.coordinator.credentials.instanceUrl.AbsoluteUri;
+            share.storedData.accessToken = MySFRestAPI.coordinator.credentials.accessToken;
+            share.storedData.refreshToken = MySFRestAPI.coordinator.credentials.refreshToken;
+            share.storedData.instanceUrl = MySFRestAPI.coordinator.credentials.instanceUrl.AbsoluteUri;
             serializer.WriteObject(stream, share.storedData);
             await stream.FlushAsync();
         }

@@ -5,10 +5,10 @@ using System.Runtime.InteropServices;
 // アセンブリに関する情報は、次の属性のセットを通して制御されます。
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle("MySalesforceMobileSDKTemplate")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("MySalesforceMobileSDK Empty Template")]
+[assembly: AssemblyDescription("This is a template for customize from zero/")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Yuji Yasuno")]
 [assembly: AssemblyProduct("MySalesforceMobileSDKTemplate")]
 [assembly: AssemblyCopyright("Copyright ©  2013")]
 [assembly: AssemblyTrademark("")]
